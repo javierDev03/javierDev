@@ -1,14 +1,16 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 
+
+
 export function ContactSection() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Construir el body del correo en texto plano y URL encoded
     const subject = encodeURIComponent(`Nuevo mensaje de ${form.name}`);

@@ -1,4 +1,3 @@
-"use client";
 
 import createGlobe, { COBEOptions } from "cobe";
 import { useMotionValue, useSpring } from "motion/react";

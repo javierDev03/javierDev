@@ -7,9 +7,10 @@ import { AboutSection } from "./components/content/AboutSection"
 import { PortfolioSection } from "./components/content/portfolio-section"
 import { ResumeSection } from "./components/content/resume-section"
 import { ContactSection } from "./components/content/contact-section"
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function PortfolioPage() {
-  const [activeSection, setActiveSection] = useState("home") // Default active section
+  const [activeSection, setActiveSection] = useState("home")
 
   const renderContent = () => {
     switch (activeSection) {
@@ -30,29 +31,38 @@ export default function PortfolioPage() {
 
   return (
     <div className="flex min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-blue-950">
-      {/* Left Sidebar (Desktop) and Mobile Menu Button */}
       <Sidebar activeSection={activeSection} onSectionChange={setActiveSection} />
 
-      {/* Main Content Area */}
       <main className="flex-1 p-4 sm:p-6 md:p-8 overflow-y-auto custom-scrollbar mt-16 md:mt-0">
-        <div className="max-w-full md:max-w-5xl lg:max-w-6xl mx-auto py-4">{renderContent()}</div>
+        <div className="max-w-full md:max-w-5xl lg:max-w-6xl mx-auto py-4">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeSection}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.4 }}
+            >
+              {renderContent()}
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </main>
 
-      {/* Custom Scrollbar Styling */}
-      <style jsx global>{`
+      <style>{`
         .custom-scrollbar::-webkit-scrollbar {
           width: 8px;
         }
         .custom-scrollbar::-webkit-scrollbar-track {
-          background: #1f2937; /* gray-800 */
+          background: #1f2937;
           border-radius: 10px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #4b5563; /* gray-600 */
+          background: #4b5563;
           border-radius: 10px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-          background: #6b7280; /* gray-500 */
+          background: #6b7280;
         }
       `}</style>
     </div>
