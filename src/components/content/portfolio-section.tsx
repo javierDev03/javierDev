@@ -6,7 +6,7 @@ export function PortfolioSection() {
       description:
         "Aplicación SaaS para la gestión de agendas, creación de landing del negocio y citas, con funcionalidades de recordatorios.",
       tech: ["Laravel", "Vue.js", "MySQL", "Tailwind CSS",],
-      image: "/public/agenda.png",
+      image: "/agenda.png",
       link: "https://www.agendaplus.com.mx/",
     },
     {
@@ -14,7 +14,7 @@ export function PortfolioSection() {
       description:
         "Plataforma centralizada para la recepción, registro, seguimiento y resolución de incidentes relacionados con la infraestructura hidráulica en el Estado de México.",
       tech: ["Vue.js", "Laravel", "MySQL", "Leaflet.js", "Chart.js", "Tailwind CSS"],
-      image:"/public/conagua.png",
+      image:"/conagua.png",
       link: "https://caem-incidencias.cenidet.tecnm.mx/",
     },
     {
@@ -22,7 +22,7 @@ export function PortfolioSection() {
       description:
         "CITCA integró registro en línea, administración de ponencias y talleres, seguimiento de evaluaciones, gestión de acreditaciones y publicación de la agenda, optimizando procesos y mejorando la experiencia de organizadores y asistentes.",
       tech: ["Laravel", "Vue.js", "Tailwind CSS",],
-      image: "/public/citca.png",
+      image: "/citca.png",
       link: "#",
     },
     {
@@ -30,7 +30,7 @@ export function PortfolioSection() {
       description:
         "Sistema integral para la gestión de la venta y administración de animales, con funcionalidades de seguimiento de inventario y análisis de ventas.",
       tech: ["Laravel", "MySQL", "Filament"],
-      image: "/public/ERP.png",
+      image: "/ERP.png",
       link: "#",
     },
     {
@@ -38,7 +38,7 @@ export function PortfolioSection() {
       description:
         "Aplicación móvil para la gestión de inventarios utilizando códigos QR, permitiendo un seguimiento eficiente de productos y activos.",
       tech: ["React.js", "Firebase", "Tailwind CSS", "Capacitor"],
-      image: "/public/app.png",
+      image: "/app.png",
       link: "#",
     },
     {
@@ -46,7 +46,7 @@ export function PortfolioSection() {
       description:
         "Plataforma para la gestión de citas, historial clínico y comunicación entre veterinarios y dueños de mascotas.",
       tech: ["React.js", "Laravel", "Tailwind CSS", "MongoDB"],
-      image: "/public/beet.jpeg",
+      image: "/beet.jpeg",
       link: "#",
     },
   ]
