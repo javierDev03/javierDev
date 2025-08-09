@@ -43,7 +43,7 @@ export function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
         <div className="flex flex-col items-center mb-8 mt-4">
           <div className="relative w-24 h-24 rounded-full border-4 border-blue-500 overflow-hidden mb-3 shadow-lg">
             <img
-              src="/public/avatar.jpeg"
+              src="/avatar.jpeg"
               alt="Tu Foto de Perfil"
               className="rounded-full"
             />
