@@ -113,7 +113,7 @@ export function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
     <div className="flex flex-col items-center mb-8 mt-4">
       <div className="relative w-24 h-24 rounded-full border-4 border-blue-500 overflow-hidden mb-3">
         <img
-          src="/placeholder.svg?height=100&width=100"
+          src="/avatar.jpeg"
           alt="Tu Foto de Perfil"
 
           className="rounded-full"
@@ -122,13 +122,13 @@ export function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
       <h2 className="text-xl font-bold text-white mb-1">Tu Nombre</h2>
       <p className="text-blue-300 text-sm font-medium">Desarrollador Fullstack</p>
       <div className="flex gap-3 mt-3">
-        <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/javier-cervantes-a40517275/" target="_blank" rel="noopener noreferrer">
           <Linkedin className="w-5 h-5 text-gray-400 hover:text-blue-400" />
         </a>
-        <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/javierDev03" target="_blank" rel="noopener noreferrer">
           <Github className="w-5 h-5 text-gray-400 hover:text-blue-400" />
         </a>
-        <a href="mailto:tu.email@example.com">
+        <a href="mailto:javicervel250@gmail.com">
           <Mail className="w-5 h-5 text-gray-400 hover:text-blue-400" />
         </a>
       </div>
@@ -154,9 +154,11 @@ export function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
 
     {/* Resume Download Button (Mobile) */}
     <div className="mt-8">
-      <button className="w-full border border-blue-500 text-blue-300 hover:bg-blue-900 hover:text-white transition-colors flex items-center justify-center gap-2 bg-transparent py-2.5 text-base font-semibold rounded-lg">
-        <Download className="w-4 h-4" /> Descargar CV
-      </button>
+      <a href="https://docs.google.com/document/d/1q89L4l9P83BMnx32MlF9r_p3eFSQSIdZ/edit?usp=sharing&ouid=108776752255416777756&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
+        <button className="w-full border border-blue-500 text-blue-300 hover:bg-blue-900 hover:text-white transition-colors flex items-center justify-center gap-2 bg-transparent py-2.5 text-base font-semibold rounded-lg">
+          <Download className="w-4 h-4" /> Descargar CV
+        </button>
+      </a>
     </div>
   </aside>
     </>
