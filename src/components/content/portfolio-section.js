@@ -23,6 +23,13 @@ export function PortfolioSection() {
             link: "#",
         },
         {
+            title: "SystemPackage",
+            description: "SystemPackage es una plataforma de rastreo y gestión de paquetes que permite a los usuarios monitorear envíos en tiempo real, gestionar órdenes y recibir notificaciones automáticas sobre el estado de sus entregas.",
+            tech: ["Laravel", "Livewire", "Tailwind CSS", "Filament"],
+            image: "/delivering.png",
+            link: "#",
+        },
+        {
             title: "ERP para Venta y Gestión de Animales",
             description: "Sistema integral para la gestión de la venta y administración de animales, con funcionalidades de seguimiento de inventario y análisis de ventas.",
             tech: ["Laravel", "MySQL", "Filament"],

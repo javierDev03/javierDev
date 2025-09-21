@@ -52,7 +52,7 @@ export function ResumeSection() {
             {/* Devoost */}
             <div className="bg-gray-800 p-5 rounded-lg border border-gray-700 shadow-md">
               <h4 className="text-xl sm:text-2xl font-semibold text-white mb-1">Desarrollador FullStack</h4>
-              <p className="text-blue-400 text-lg sm:text-xl mb-1">Devoost (Remoto, Canadá–México)</p>
+              <p className="text-blue-400 text-lg sm:text-xl mb-1">Devoost (Remoto, México)</p>
               <p className="text-gray-400 text-xs sm:text-sm mb-3">Abril 2023 – Junio 2023</p>
               <ul className="list-disc list-inside text-gray-300 space-y-1 sm:space-y-2 text-base sm:text-lg">
                 <li>

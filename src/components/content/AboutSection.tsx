@@ -23,9 +23,7 @@ export function AboutSection() {
     { icon: FaLaravel, name: "Laravel" },
     { icon: FaVuejs, name: "Vue.js" },
     { icon: FaReact, name: "React.js" },
-    { icon: SiTypescript, name: "TypeScript" },
     { icon: RiTailwindCssFill, name: "Tailwind CSS" },
-    { icon: SiPostgresql, name: "PostgreSQL" },
     { icon: FaDocker, name: "Docker" },
     { icon: FaAws, name: "AWS" },
     { icon: FaGithub, name: "Git" },
@@ -99,11 +97,7 @@ export function AboutSection() {
             </div>
           ))}
         </div>
-
-        <p className="text-base sm:text-lg lg:text-xl text-gray-400 leading-relaxed mt-8">
-          Fuera del desarrollo, me apasiona [menciona un hobby o interés, ej: la música, los deportes, la lectura], lo
-          que me permite recargar energías y abordar los desafíos con una mente fresca y creativa.
-        </p>
+       
       </div>
     </div>
   )
